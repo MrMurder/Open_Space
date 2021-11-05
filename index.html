@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en" xmlns="http://www.w3.org/1999/html" xmlns="http://www.w3.org/1999/html">
+<head>
+    <link rel="icon" href="favicon.ico" type="image/x-icon">
+    <meta charset="UTF-8">
+    <title>Open Space</title>
+    <link rel="stylesheet" type="text/css" href="style.css">
+    <script async src="script.js"></script>
+</head>
+<body>
+<div class="space">
+    <div class="planet-area">
+        <img id="rocket" class="rocket" src="rocket.png" alt="Rocket">
+        <img class="planet" src="mars.png" alt="Planet Mars">
+    </div>
+    <div class="control-panel">
+        <div class="control-panel__inner">
+            <input type="password" id="pass-field" placeholder="Enter password to unlock">
+            <input type="button" id="ok-button" value="OK">
+            <div class="check-buttons" onchange="isAllChecked()">
+                <input class="checkbox" type="checkbox" disabled>
+                <input class="checkbox" type="checkbox" disabled>
+                <input class="checkbox" type="checkbox" disabled>
+                <input class="checkbox" type="checkbox" disabled>
+                <input class="checkbox" type="checkbox" disabled>
+                <input class="checkbox" type="checkbox" disabled>
+            </div>
+            <div class="levers" onchange="isRangesMax()">
+                <input type="range" class="input-range" disabled>
+                <input type="range" class="input-range" disabled>
+                <input type="range" class="input-range" disabled>
+                <input type="range" class="input-range" disabled>
+                <input type="range" class="input-range" disabled>
+            </div>
+            <input type="button" id="launch-btn" value="Launch" disabled onclick="launchRocket()">
+        </div>
+    </div>
+</div>
+
+</body>
+</html>
